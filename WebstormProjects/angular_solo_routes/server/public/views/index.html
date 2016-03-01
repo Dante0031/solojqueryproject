@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>angular solo routes</title>
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="vendors/angular-route/angular-route.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+
+    <!--<base href="/">-->
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Real Presidential Candidates</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#/cruz"><button class="btn btn-danger btn-lg">Ted Cruz</button></a></li>
+            <li><a href="#/bernie"><button class="btn btn-success btn-lg">Bernie Sanders</button></a></li>
+            <li><a href="#/hilary"><button class="btn btn-info btn-lg">Hilary Clinton</button></a></li>
+            <li><a href="#/rubio"><button class="btn btn-warning btn-lg">Marco Rubio</button></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<div ng-view>
+
+</div>
+
+<footer>This is a footer</footer>
+</body>
+</html>
+
